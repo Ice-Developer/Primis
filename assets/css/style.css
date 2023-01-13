@@ -23,6 +23,7 @@ nav{
 header{
     grid-area: header;
     display: flex;
+    flex-direction: column;
 }
 main{
     grid-area: main;
@@ -95,7 +96,7 @@ a{
 
 .custom-shape-divider-bottom-1673561981 {
     position: absolute;
-    bottom:128px;
+    top: 432px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -112,5 +113,12 @@ a{
 
 .custom-shape-divider-bottom-1673561981 .shape-fill {
     fill: #ffffff;
+}
+
+.ceoImg{
+    border-radius: 34% 66% 32% 68% / 56% 34% 66% 44%;
+    background-image: url(../img/ceo_img_300x300.jpeg);
+    width: 300px;
+    height: 300px;
 }
 
