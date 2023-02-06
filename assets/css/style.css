@@ -261,8 +261,20 @@ a{
     font-family: Montserrat;
     gap: 20px;
 }
-.detalle p{
+.det1{
     text-align:justify;
+}
+.det2{
+    display: none;
+}
+@media (max-width:900px){
+    .det1{
+        display: none;
+    }
+    .det2{
+        display:initial;
+        text-align:justify;
+    }
 }
 .nos1{
     color: #3c6ca8;
