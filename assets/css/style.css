@@ -615,6 +615,11 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     font-family: Montserrat;
     color: #ffffff;
 }
+@media(max-width:500px){
+    .sldCont{
+        font-size: 75%;
+    }
+}
 .formCont{
     display: flex;
     flex-direction: column;
