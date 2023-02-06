@@ -63,8 +63,8 @@ footer{
     padding: 0px 30px;
     font-family: Montserrat;
     color: white;
-
 }
+
 .nomEmpresa{
     display: flex;
     align-items: center;
@@ -120,15 +120,26 @@ ul{
 }
 li {
     font-family: Montserrat;
-    color: white;
-    
+    color: swhite;    
 }
 a{
     text-decoration: none;
     font-family: Montserrat;
-    color: white;
-    
+    color: white;    
 }
+.nav2{
+    display: none;
+}
+@media (max-width:700px){
+    .nav1{
+        display: none;
+    }
+    .nav2{
+        display:inline;
+    }
+}
+
+
 .saludo{
     display: flex;
     padding-left: 30px;
@@ -139,6 +150,24 @@ a{
     align-items:initial;
     font-family: Montserrat;
     color: white;
+}
+.saludo2{
+    display: none;
+}
+@media (max-width: 900px){
+    .saludo{
+        display: none;
+    }
+    .saludo2{
+        display: flex;
+        padding-top: 50px;
+        gap: 20px;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        font-family: Montserrat;
+        color: white;
+    }
 }
 .corte{
     position: relative;
@@ -242,21 +271,41 @@ a{
     text-align: justify;
     gap: 20px;
 }
-@media (min-width: 768px) and (max-width: 1023px){
+@media (max-width: 1023px){
     .cardSol{
         flex-direction: row;
         width: 650px;
         height: 70px;
+        justify-content: center;
     }
     .cards{
         flex-direction: column;
         margin-top: 10px;
         gap: 10px;
     }
-    .cardImg {
-
+    
+}
+@media (max-width: 700px){
+    .cardSol{
+        flex-direction: row;
+        width: 600px;
+        height: 70px;
+        justify-content: center;
+    }
+    .cardImg{
+        width: 170px;
+    }
+    .cardImg img{
+        height: 80%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+    .cardSol p{
+        height: 90%;
+        font-weight:normal;
     }
 }
+
 
 .cardImg{
     width: 100%;
@@ -287,13 +336,31 @@ a{
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
 }
-.imgServ{ 
+.imgServ1{ 
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Montserrat;
     color: #3e3e3e;
 }
+.imgServ2{
+    display: none;
+}
+@media (max-width:1000px){
+    .imgServ2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        font-family: Montserrat;
+        color: #3e3e3e;
+    }
+    .imgServ1{
+        display: none;
+    }
+}
+
 .detServ{
     display: flex;
     flex-direction: row;
