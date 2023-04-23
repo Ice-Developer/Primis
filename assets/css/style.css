@@ -308,6 +308,7 @@ a{
     height: 400px;
     width: 80%;
     border-radius: 16px;
+    background-size: cover;
 }
 @media (max-width:1100px){
     .soluciones{
